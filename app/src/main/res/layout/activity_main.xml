@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="3dp"
+        android:layout_height="380dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toRightOf="@id/nameTag"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <TextView
+        android:id="@+id/nameTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/nameAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="ETKA"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <View
+        android:id="@+id/verticalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTag"></View>
+
+    <TextView
+        android:id="@+id/surNameTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="SURNAME"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine1"></TextView>
+
+    <TextView
+        android:id="@+id/surNameAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="UZUN"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine1"></TextView>
+
+    <View
+        android:id="@+id/verticalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surNameTag"></View>
+
+    <TextView
+        android:id="@+id/bornDateTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="BORN DATE"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine2"></TextView>
+
+    <TextView
+        android:id="@+id/bornDateAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="1998"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine2"></TextView>
+
+    <View
+        android:id="@+id/verticalLine3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bornDateTag"></View>
+
+    <TextView
+        android:id="@+id/hometownTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="HOMETOWN"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine3"></TextView>
+
+    <TextView
+        android:id="@+id/hometownAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="UNKNOWN"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine3"></TextView>
+
+    <View
+        android:id="@+id/verticalLine4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hometownTag"></View>
+
+    <TextView
+        android:id="@+id/universityTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSITY"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine4"></TextView>
+
+    <TextView
+        android:id="@+id/universityAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="MARMARA"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine4"></TextView>
+
+    <View
+        android:id="@+id/verticalLine5"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/universityTag"></View>
+
+    <TextView
+        android:id="@+id/graDateTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="GRADUATION \nYEAR"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine5"></TextView>
+
+    <TextView
+        android:id="@+id/graDateAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="2022"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine5"></TextView>
+
+    <View
+        android:id="@+id/verticalLine6"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2dae2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/graDateTag"></View>
+
+    <TextView
+        android:id="@+id/companyTag"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="COMPANY"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine6"></TextView>
+
+    <TextView
+        android:id="@+id/companyAnsTag"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="DOGUS TEK"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@id/horizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine6"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
